@@ -1,3 +1,0 @@
-## ¿Dónde se puede aplicar la visión artificial?
-
-Se puede aplicar en el sector salud. Por ejemplo, en estudios médicos como resonancias magnéticas y radiografías, se podría aplicar en la detección de alguna anomalía el organismo humano y detección de enfermedades, por ejemplo en el caso de lesiones en huesos, ligamentos, músculos, o algo de mayor gravedad como un tumor cancerígeno, la visión artificial podría identificar en el momento sin necesidad de hacer una examinación exhaustiva.
