@@ -19,3 +19,15 @@ Ciclo de vida:
 
 definición del problema
 requerimientos funcionales 
+
+### 21/09
+# Arquitectura de un sistema de visión (parte 1)
+
+
+- Un sistema de visión se compone de una cadena de bloques funcionales, no solo de una cámara
+- Bloques principales: Iluminación, óptica/lente, sensor de imagen, interfaz de aquisión, unidad de procesamiento, salida/actuador.
+
+Cada bloque impacta directamente la calidad del resultado final; un error en iluminación no se corrige después en software.
+
+Flujo de datos: Captura, digitalización, transferencia (USB, GigE, MIPI, CameraLink), memoria, algoritmo, decisión/comunicación (PLC, red, actuador)
+Criterios de diseño: Resolución requerida 
