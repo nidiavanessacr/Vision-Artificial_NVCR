@@ -63,3 +63,44 @@ El entrenamiento del modelo se realizará utilizando imágenes retinianas proven
 ## Evaluación
 
 El desempeño del sistema será evaluado mediante métricas de clasificación utilizadas en aprendizaje automático, incluyendo exactitud (Accuracy), sensibilidad (Recall), especificidad, precisión (Precision) y el área bajo la curva ROC (AUC), lo que permitirá determinar la capacidad del modelo para identificar correctamente patrones asociados con enfermedad renal crónica y comparar los resultados obtenidos con los reportados en investigaciones previas.
+
+# 28/09
+
+## ¿Qué es la arquitectura de un sistema de visión?
+
+Es la cadena completa de bloques funcionales, no sola la cámara: desde la luz hasta la decisión final.
+
+Un error en un bloque temprano (iluminación, óptica) = no se corrige después con software
+
+### Métricas
+
+¿Qué resolución se necesita? 
+
+# 12/10/26
+# Índices vegetativos
+
+- Es una operación matemática que combina dos o más bandas espectrales para resaltar una propiedad de las plantas.
+- Convierte varias imágenes en una sola imagen de un canal, donde cada píxel es un valor numérico fácil de mapear y comprar.
+- Reduce el efecto de la iluminación y resalta la señal de la planta, como su vigor de contenido de clorofila.
+- Cada índice responde a una pregunta distinta, por eso no existe un índice "mejor" para todo
+
+### La física detrás del índice
+
+- La clorofila absorbe la luz roja a 600 nanómetros y azul para hacer fotosíntesis, por so u a hoja sana se ve verde.
+- La estructura interna de la hoja refleja con fuerza el infrarrojo cercano NIR diferente a 840  nanómetros que el ojo humano no ve
+- Planta sana: Poco rojo reflejado y mucho NIR
+- Planta estresada: Más rojo y menos NIR
+- El Phantom 4 Multiespectral captura estas bandas: Azul 450, verde 560, rojo 650, borde rojo 730 y NIR 840 nanómetros
+
+### NDVI: El índice más usado 
+
+- NDVI = (NIR -R) / (NIR + R): Compara cuanto infrarrojo refleja la planta contra cuánto rojo absorbe.
+	- Su valor va de -1 a 1: Agua y nubes dan valore negativos, suelo desnudo diferente de 0.1 -  0.2 y vegetación sana de 0.6 a 0.9.
+	- Se usa para medir vigor y cobertura total
+
+# 14/10/26
+
+El **TIFF** (_Tagged Image File Format_ o formato de archivo de imagen con etiquetas) es un formato de imagen de alta calidad creado en 1986 por Aldus
+
+- Una imagen RGB combina tres canales (rojo, verde y azul) de 8 bits cada uno, cada pixel es la mezcla de los tres y forma una imagen a color como la ve el ojo humano.
+- Sirve para inspección visual, ortomosaicos de referencia y detetar daños, maleza o fallas de siembra que se ven 
